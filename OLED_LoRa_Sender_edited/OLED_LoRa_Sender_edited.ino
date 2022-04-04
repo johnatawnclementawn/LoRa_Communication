@@ -1,5 +1,5 @@
 /*
-  Control an LED Remotely via 2 Heltec LoRa boards 
+  Control an LED Remotely via 2 Heltec LoRa boards: Transmitter
   Author Johnathan Clementi
   Date: 2022/03/30
 
@@ -8,7 +8,8 @@
   to two push buttons, and one as a receiver connected to an LED. When buttons A/B are pressed,
   the transmitter LoRa board will send a LoRa packet containing a string based on the button 
   that has been pressed. When this packet is recieved by the receiver, it the packet will be 
-  parsed, compared to 
+  parsed, compared to a predefined string, and the signal sent to an LED will be determined by
+  this string comparison.
 
   A note from Aaron Lee about the functionality of the OLED display:
       The onboard OLED display is SSD1306 driver and I2C interface. In order to make the
